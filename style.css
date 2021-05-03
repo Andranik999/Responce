@@ -18,6 +18,8 @@ body {
 
 .burger {
   display: none;
+  position: absolute;
+  right: 0;
 }
 
 .burger div {
@@ -46,6 +48,7 @@ a {
   height: 85px;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 .page-header nav {
@@ -343,6 +346,10 @@ nav li {
     font-family: "Montserrat";
   }
 
+  .burger {
+    display: block;
+  }
+
   #box-1 {
     width: 100%;
     height: 360px;
@@ -435,6 +442,10 @@ nav li {
     display: flex;
     font-size: 13px;
     margin: auto;
+  }
+
+  .burger {
+    display: block;
   }
 
   #box-1 {
