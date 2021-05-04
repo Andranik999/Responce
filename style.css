@@ -9,6 +9,33 @@ body {
   background-color: rgba(235, 235, 235, 255);
 }
 
+.menu-items {
+  position: absolute;
+  right: 0;
+  font-size: 13px;
+  font-weight: normal;
+  background-color: rgba(55, 60, 63);
+  top: 0;
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  z-index: -62615155;
+  transition: all ease-in-out 0.3s;
+}
+
+.-open {
+  opacity: 1;
+  overflow: visible;
+  height: auto;
+  top: 75px;
+  transition: all ease-in-out 0.3s;
+}
+
+.menu-items ul {
+  flex-direction: column;
+  padding: 10px;
+}
+
 .nav-info {
   display: none;
   justify-content: center;
@@ -20,6 +47,7 @@ body {
   display: none;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 .burger div {
@@ -49,6 +77,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  z-index: 62615155;
 }
 
 .page-header nav {
@@ -64,6 +93,7 @@ a {
 
 nav li {
   margin-left: 20px;
+  font-weight: bold;
 }
 
 #box-1 {
@@ -82,7 +112,7 @@ nav li {
 
 .box-1-footer {
   position: relative;
-  font-size: 30px;
+  font-size: 40px;
   margin-top: 30px;
   color: rgba(165, 211, 225, 255);
 }
@@ -174,7 +204,7 @@ nav li {
 .box-4 div {
   width: 550px;
   margin: auto;
-  padding: auto;
+  padding: 10px;
   justify-content: space-around;
 }
 
@@ -183,15 +213,6 @@ nav li {
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 30px;
-}
-
-#box-1 {
-  color: white;
-  background-color: rgb(20, 173, 193);
-  display: flex;
-  align-items: center;
-  font-size: 75px;
-  height: 500px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -234,7 +255,6 @@ nav li {
   }
 
   #box-2-icon {
-    font-size: 45px;
     height: 250px;
     width: 23%;
   }
@@ -263,7 +283,7 @@ nav li {
     font-weight: bold;
   }
   #textBox2 {
-    padding: 100px;
+    padding: 90px;
   }
 }
 @media screen and (max-width: 980px) {
@@ -279,7 +299,7 @@ nav li {
 
   .box-1-container {
     flex-direction: column;
-    font-size: 65px;
+    font-size: 45px;
     font-weight: bold;
     flex-wrap: wrap;
   }
@@ -303,7 +323,6 @@ nav li {
   }
 
   #box-2-icon {
-    font-size: 45px;
     height: 250px;
   }
 
@@ -348,6 +367,7 @@ nav li {
 
   .burger {
     display: block;
+    right: 7px;
   }
 
   #box-1 {
@@ -357,7 +377,7 @@ nav li {
 
   .box-1-container {
     flex-direction: column;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.2;
     flex-wrap: wrap;
@@ -380,11 +400,10 @@ nav li {
   }
 
   #box-2-text {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   #box-2-icon {
-    font-size: 45px;
     height: 170px;
   }
 
@@ -444,8 +463,18 @@ nav li {
     margin: auto;
   }
 
+  .menu-items {
+    display: none;
+    position: absolute;
+    right: 0;
+    font-size: 10px;
+    font-weight: normal;
+    background-color: rgba(55, 60, 63);
+  }
+
   .burger {
     display: block;
+    right: 5px;
   }
 
   #box-1 {
@@ -468,8 +497,8 @@ nav li {
   }
 
   .arrow {
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
   }
 
   #box-2 {
@@ -482,8 +511,6 @@ nav li {
   }
 
   #box-2-icon {
-    font-size: 23px;
-    font-weight: bold;
     height: 90px;
   }
 
@@ -494,8 +521,8 @@ nav li {
   }
 
   #box-3 div {
-    min-width: 100%;
-    max-height: 290px;
+    width: 100%;
+    height: 290px;
     background-position: center;
   }
 
@@ -503,7 +530,7 @@ nav li {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
   }
 
